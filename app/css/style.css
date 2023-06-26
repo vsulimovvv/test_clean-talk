@@ -1199,6 +1199,9 @@ picture {
           align-items: flex-start;
 }
 .mobile-menu__login {
+  color: var(--color-black);
+}
+.mobile-menu__login {
   margin-bottom: 12px;
 }
 .mobile-menu .menu-accordion {
