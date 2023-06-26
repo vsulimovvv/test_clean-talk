@@ -1,0 +1,16 @@
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'global';
+
+// * ===== Other components
+@import './components/custom-checkbox';
+@import './components/popups';
+@import './components/form-submit';
+@import './components/footer';
+@import './components/header';
+@import './components/hero';
+@import './components/menu-mobile';
+@import './components/menu';
+@import './components/accordion';

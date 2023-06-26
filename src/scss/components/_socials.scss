@@ -1,0 +1,60 @@
+.socials {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      @include adaptive-value('margin-right', 25, 15, 1);
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid #d4d4d6;
+    position: relative;
+    transition: 200ms ease;
+
+    &:hover {
+      background-color: var(--color-accent);
+      border-color: var(--color-accent);
+
+      &::after {
+        background-color: var(--color-white);
+      }
+    }
+
+    &::after {
+      @include elDef();
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--color-accent);
+      transition: 200ms ease;
+    }
+
+    &--vk {
+      &::after {
+        @include maskImage(url('../img/socials/vk.svg'), contain);
+      }
+    }
+
+    &--instagram {
+      &::after {
+        @include maskImage(url('../img/socials/instagram.svg'), contain);
+      }
+    }
+
+    &--telegram {
+      &::after {
+        @include maskImage(url('../img/socials/telegram.svg'), contain);
+      }
+    }
+  }
+}

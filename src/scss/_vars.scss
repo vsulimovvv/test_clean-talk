@@ -1,0 +1,20 @@
+// Color
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+
+  --color-text: #4e4e4e;
+  --color-bg: #fefdfc;
+  --color-primary: #00634b;
+}
+
+// * breakpointsMaxW
+$bp-container: 1470px;
+$bp-1200: 1200px;
+$bp-991: 991.98px;
+$bp-768: 767.98px;
+$bp-576: 576px;
+$bp-360: 359.98px;
+
+// *=== Fonts
+$Inter: 'Inter';

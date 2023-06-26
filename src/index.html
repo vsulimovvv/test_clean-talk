@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+
+<!-- Nice Select -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>eLearn</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--registration">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Close popup">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 6L6 18"
+          stroke="#444444"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M6 6L18 18"
+          stroke="#444444"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Registration</h2>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <input
+            class="form-submit__input"
+            name="name"
+            id="name"
+            type="text"
+            required
+          />
+          <label class="form-submit__label" for="name"> Name Surname </label>
+        </div>
+        <div class="form-submit__group">
+          <input
+            class="form-submit__input"
+            name="email"
+            id="email"
+            type="email"
+            required
+          />
+          <label class="form-submit__label" for="email"> Email </label>
+        </div>
+        <div class="form-submit__group">
+          <input
+            class="form-submit__input"
+            name="phone"
+            id="phone"
+            type="tel"
+            required
+          />
+          <label class="form-submit__label" for="phone"> Phone </label>
+        </div>
+
+        <div class="form-submit__group">
+          <select class="form-submit__select" name="find" id="find">
+            <option value="default">Where did you find us</option>
+            <option value="goggle">Google</option>
+            <option value="linkedin">Linkedin</option>
+            <option value="facebook">Facebook</option>
+            <option value="instagram">Instagram</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-submit__group">
+          <input
+            class="form-submit__input"
+            name="password"
+            id="password"
+            type="password"
+            required
+          />
+          <label class="form-submit__label" for="password"> Password </label>
+
+          <button class="form-submit__show-pas" type="button">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_202_21)">
+                <path
+                  d="M17.94 17.94C16.2306 19.243 14.1491 19.9649 12 20C5 20 1 12 1 12C2.24389 9.68192 3.96914 7.65663 6.06 6.06003M9.9 4.24002C10.5883 4.0789 11.2931 3.99836 12 4.00003C19 4.00003 23 12 23 12C22.393 13.1356 21.6691 14.2048 20.84 15.19M14.12 14.12C13.8454 14.4148 13.5141 14.6512 13.1462 14.8151C12.7782 14.9791 12.3809 15.0673 11.9781 15.0744C11.5753 15.0815 11.1752 15.0074 10.8016 14.8565C10.4281 14.7056 10.0887 14.4811 9.80385 14.1962C9.51897 13.9113 9.29439 13.572 9.14351 13.1984C8.99262 12.8249 8.91853 12.4247 8.92563 12.0219C8.93274 11.6191 9.02091 11.2219 9.18488 10.8539C9.34884 10.4859 9.58525 10.1547 9.88 9.88003"
+                  stroke="#444444"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1 1L23 23"
+                  stroke="#444444"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath>
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+        <div class="form-submit__group">
+          <input
+            class="form-submit__input"
+            name="confirm-password"
+            id="confirm-password"
+            type="password"
+            required
+          />
+          <label class="form-submit__label" for="confirm-password">
+            Confirm password
+          </label>
+          <button class="form-submit__show-pas" type="button">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_202_21)">
+                <path
+                  d="M17.94 17.94C16.2306 19.243 14.1491 19.9649 12 20C5 20 1 12 1 12C2.24389 9.68192 3.96914 7.65663 6.06 6.06003M9.9 4.24002C10.5883 4.0789 11.2931 3.99836 12 4.00003C19 4.00003 23 12 23 12C22.393 13.1356 21.6691 14.2048 20.84 15.19M14.12 14.12C13.8454 14.4148 13.5141 14.6512 13.1462 14.8151C12.7782 14.9791 12.3809 15.0673 11.9781 15.0744C11.5753 15.0815 11.1752 15.0074 10.8016 14.8565C10.4281 14.7056 10.0887 14.4811 9.80385 14.1962C9.51897 13.9113 9.29439 13.572 9.14351 13.1984C8.99262 12.8249 8.91853 12.4247 8.92563 12.0219C8.93274 11.6191 9.02091 11.2219 9.18488 10.8539C9.34884 10.4859 9.58525 10.1547 9.88 9.88003"
+                  stroke="#444444"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1 1L23 23"
+                  stroke="#444444"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath>
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+
+        <label class="form-submit__checkbox checkbox">
+          <input class="checkbox__input" type="checkbox" required />
+          <span class="checkbox__box"></span>
+          <span class="checkbox__text">
+            I agree with <a href="#">Terms and Conditions</a>
+          </span>
+        </label>
+
+        <button class="form-submit__btn btn" type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo" href="#">
+        <img src="img/logo.svg" alt="logo" />
+      </a>
+      <button class="mobile-menu__close" type="button" aria-label="Close menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>About</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="menu-accordion accordion">
+          <div class="menu-accordion__control accordion-control">
+            <a class="menu-accordion__control-link" href="#"> Courses </a>
+            <button
+              class="menu-accordion__control-btn accordion-control-btn"
+              type="button"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.5 8.25L11 13.75L16.5 8.25"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="menu-accordion__content accordion-content">
+            <ul class="menu-accordion__list">
+              <li class="menu-accordion__item">
+                <a class="menu-accordion__link" href="#">Courses</a>
+              </li>
+              <li class="menu-accordion__item">
+                <a class="menu-accordion__link" href="#">Courses</a>
+              </li>
+              <li class="menu-accordion__item">
+                <a class="menu-accordion__link" href="#">Courses</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="menu-accordion accordion">
+          <div class="menu-accordion__control accordion-control">
+            <a class="menu-accordion__control-link" href="#"> Universities </a>
+            <button
+              class="menu-accordion__control-btn accordion-control-btn"
+              type="button"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.5 8.25L11 13.75L16.5 8.25"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="menu-accordion__content accordion-content">
+            <ul class="menu-accordion__list">
+              <li class="menu-accordion__item">
+                <a class="menu-accordion__link" href="#">Universities</a>
+              </li>
+              <li class="menu-accordion__item">
+                <a class="menu-accordion__link" href="#">Universities</a>
+              </li>
+              <li class="menu-accordion__item">
+                <a class="menu-accordion__link" href="#">Universities</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Online Degrees</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Teachers</span></a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu__btns">
+      <button class="mobile-menu__login">Log in</button>
+      <button class="mobile-menu__btn btn btn-registration">Register</button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="container">
+    <nav class="header__wrapper">
+      <a class="header__logo" href="#">
+        <img src="img/logo.svg" alt="logo" />
+      </a>
+
+      <div class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Courses
+
+              <svg
+                class="menu__icon"
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.5 8.25L11 13.75L16.5 8.25"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+
+            <div class="dropmenu">
+              <ul class="dropmenu__list">
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Courses</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Courses</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"> Courses </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Universities
+
+              <svg
+                class="menu__icon"
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.5 8.25L11 13.75L16.5 8.25"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+
+            <div class="dropmenu">
+              <ul class="dropmenu__list">
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Universities</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Universities</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"> Universities </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Online Degrees</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Teachers</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__btns">
+        <button class="header__login" type="button">Log in</button>
+        <button class="header__btn btn btn-registration" type="button">
+          Register
+        </button>
+      </div>
+
+      <button class="header__toggle" type="button">
+        <span class="header__toggle-line"></span>
+        <span class="header__toggle-line"></span>
+        <span class="header__toggle-line"></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+      <main class="main"><section class="hero">
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero__offer">
+        <div
+          class="hero__circle"
+          style="background-image: url('img/hero/circle.svg')"
+        ></div>
+        <div
+          class="hero__highlight hero__highlight--top"
+          style="background-image: url('img/hero/highlight-1.svg')"
+        ></div>
+        <div
+          class="hero__highlight hero__highlight--bottom-left"
+          style="background-image: url('img/hero/highlight-3.svg')"
+        ></div>
+        <div
+          class="hero__highlight hero__highlight--bottom-right"
+          style="background-image: url('img/hero/highlight-2.svg')"
+        ></div>
+        <h1 class="hero__title">Learn without limits</h1>
+        <div class="hero__text">
+          <p>
+            Start, switch, or advance your career with more than 5,800 courses,
+            Professional Certificates, and degrees from world-class universities
+            and companies.
+          </p>
+          <p>Learning with us is easy because we have</p>
+        </div>
+
+        <ul class="hero__list">
+          <li class="hero__item">
+            <svg
+              class="hero__icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 19.5C4 18.837 4.26339 18.2011 4.73223 17.7322C5.20107 17.2634 5.83696 17 6.5 17H20"
+                stroke="#00634B"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6.5 2H20V22H6.5C5.83696 22 5.20107 21.7366 4.73223 21.2678C4.26339 20.7989 4 20.163 4 19.5V4.5C4 3.83696 4.26339 3.20107 4.73223 2.73223C5.20107 2.26339 5.83696 2 6.5 2Z"
+                stroke="#00634B"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            Big library
+          </li>
+          <li class="hero__item">
+            <svg
+              class="hero__icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 1V23"
+                stroke="#00634B"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6313 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6313 13.6815 18 14.5717 18 15.5C18 16.4283 17.6313 17.3185 16.9749 17.9749C16.3185 18.6313 15.4283 19 14.5 19H6"
+                stroke="#00634B"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            Low prices
+          </li>
+          <li class="hero__item">
+            <svg
+              class="hero__icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_6_39)">
+                <path
+                  d="M10.586 2.1C10.94 1.74648 11.4136 1.53846 11.9134 1.51698C12.4132 1.49551 12.903 1.66214 13.286 1.984L13.414 2.101L15.314 4H18C18.5044 4.00009 18.9901 4.19077 19.3599 4.53384C19.7297 4.8769 19.9561 5.34702 19.994 5.85L20 6V8.686L21.9 10.586C22.2538 10.94 22.462 11.4139 22.4834 11.9139C22.5049 12.414 22.3381 12.9039 22.016 13.287L21.899 13.414L19.999 15.314V18C19.9991 18.5046 19.8086 18.9906 19.4655 19.3605C19.1224 19.7305 18.6521 19.9572 18.149 19.995L18 20H15.315L13.415 21.9C13.0609 22.2538 12.5871 22.462 12.087 22.4835C11.587 22.505 11.097 22.3382 10.714 22.016L10.587 21.9L8.68697 20H5.99997C5.49539 20.0002 5.0094 19.8096 4.63942 19.4665C4.26944 19.1234 4.04281 18.6532 4.00497 18.15L3.99997 18V15.314L2.09997 13.414C1.74616 13.06 1.53797 12.5861 1.51649 12.0861C1.49502 11.586 1.66182 11.0961 1.98397 10.713L2.09997 10.586L3.99997 8.686V6C4.00006 5.4956 4.19074 5.00986 4.53381 4.64009C4.87687 4.27032 5.34699 4.04383 5.84997 4.006L5.99997 4H8.68597L10.586 2.1ZM12 3.516L10.1 5.416C9.7678 5.74765 9.32956 5.95191 8.86197 5.993L8.68597 6H5.99997V8.686C6.00009 9.1559 5.83476 9.61083 5.53297 9.971L5.41397 10.101L3.51397 12.001L5.41397 13.9C5.74599 14.232 5.9506 14.6703 5.99197 15.138L5.99997 15.314V18H8.68597C9.15586 17.9999 9.6108 18.1652 9.97097 18.467L10.101 18.586L12 20.486L13.9 18.586C14.232 18.254 14.6702 18.0494 15.138 18.008L15.314 18H18V15.314C17.9998 14.8441 18.1652 14.3892 18.467 14.029L18.586 13.899L20.486 12L18.586 10.1C18.254 9.76798 18.0493 9.32972 18.008 8.862L18 8.686V6H15.314C14.8441 6.00012 14.3891 5.83479 14.029 5.533L13.899 5.414L11.999 3.514L12 3.516ZM15.08 8.984C15.2599 8.80465 15.5014 8.70053 15.7554 8.69277C16.0093 8.68502 16.2567 8.77422 16.4472 8.94225C16.6378 9.11028 16.7573 9.34455 16.7814 9.59748C16.8055 9.8504 16.7324 10.103 16.577 10.304L16.493 10.398L11.613 15.278C11.4224 15.4688 11.1685 15.5829 10.8993 15.5988C10.6302 15.6146 10.3646 15.5311 10.153 15.364L10.057 15.279L7.65297 12.875C7.47172 12.6955 7.36594 12.4534 7.35729 12.1985C7.34864 11.9435 7.43777 11.6948 7.60644 11.5034C7.7751 11.312 8.01055 11.1923 8.26459 11.1688C8.51863 11.1453 8.77205 11.2198 8.97297 11.377L9.06697 11.46L10.835 13.228L15.08 8.984Z"
+                  fill="#00634B"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_6_39">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            Professional certificates
+          </li>
+        </ul>
+
+        <button class="hero__btn btn" type="button">Start learning</button>
+      </div>
+      <div class="hero__img">
+        <picture>
+          <source srcset="img/hero/img.webp" type="image/webp" />
+          <img src="img/hero/img.png" alt="img" />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+      <footer class="footer">
+  <div class="container"></div>
+</footer>
+
+    </div>
+
+    <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Nice Select -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

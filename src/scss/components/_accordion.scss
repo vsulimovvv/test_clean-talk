@@ -1,0 +1,17 @@
+.accordion {
+  padding-left: 1px;
+
+  &-control {
+    transition: 150ms ease;
+    position: relative;
+    width: 100%;
+    text-align: left;
+  }
+
+  &-content {
+    max-height: 0;
+    overflow: hidden;
+    z-index: 9;
+    transition: 400ms ease;
+  }
+}
